@@ -10,7 +10,7 @@ jobs:
     steps:
     # checkout the repository code
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     
     # Remove Unused Branches
     - name: Clean up unused Branches
