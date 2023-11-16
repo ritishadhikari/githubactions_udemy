@@ -23,4 +23,4 @@ jobs:
 
       # Run Load Test using locust with specified parameters
       - name: Run Load Test
-        run: locust -f ../../load_test.py --headless --user=50 --spawn-rate=10 --host https://jsonplaceholder.typicode.com --run-time=4s
+        run: locust -f load_test.py --headless --user=50 --spawn-rate=10 --host https://jsonplaceholder.typicode.com --run-time=4s
