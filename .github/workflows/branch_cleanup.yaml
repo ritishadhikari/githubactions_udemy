@@ -1,0 +1,19 @@
+name: Branch Cleanup
+
+on: 
+  schedule:
+    - cron: "0 0 * * *"  # will trigger every hour
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+    # checkout the repository code
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    
+    # Remove Unused Branches
+    - name: Clean up unused Branches
+      run:  /
+        git fetch --prune
+        git branch --merged master | grep -v "master" | xargs -n 1 git branch -d

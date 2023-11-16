@@ -1,0 +1,73 @@
+With Github Actions:
+    - Coding Standards are maintained
+    - It acts as quality gate keepers
+    - Warm welcome to new contributors
+    - Dispatch timely reports and updates
+    - It ensures that each repository, irrespective of its size or complexity, operates 
+    at its optimal best
+    - CI/CD, testing, deployment, and other workflows in one place
+
+Worflow:
+    -Automatically checks if the code is correct, if the website still
+    works as it should and then may be update the live website with those with those 
+    changes, and all this without any human intervention.
+    - It is just a set of rules or instructions that guide a process from start to
+    finish
+
+Actions:
+    - These are predefined pieces of code that performs specific tasks
+    - Developers can use these actions to automate common processes, making their
+    workflows more efficient and streamlined
+
+Steps:
+    - It is a specific instruction, a singular action to be performed 
+    - Within a broader process, steps are the building blocks that ensure everything 
+    comes togather correctly
+    - Ex.:
+        - Check the new code for errors
+        - Merge this new code with the existing one
+        - Notify the team that the update was successful
+    - A software process relies on each step being correctly executed
+    - They are the fundamental building blocks ensuring everything works as it should
+
+Jobs:
+    - They are distinct units of work that can be executed
+    - They can run one after the other or sometimes even at the same time depending
+    on the requirements
+    - They are the segments or chunks that make up a larger process
+    - A software workflow depends on each job being executed correctly and efficiently
+
+Runners:
+    - Environments or machines where specific tasks, jobs or operations are carried
+    out
+    - Platforms or machines that execute the tasks we set for them
+
+Best Practices for storing and managing secrets:
+    - Use Github's secret store
+    - Give clear names
+    - Grant minimal permissions
+    - Regularly change/rotate your secrets
+    - Use different secrets for different environments
+
+Secrets Usage:
+    - Use built-in Github features such as team and repository access to control who
+    can view and edit your secrets
+    - Use actions that are designed to encrypt your secrets and protect them during 
+    your workflow
+
+Types of testing and debugging:
+    - Unit Testing
+    - End to End Testing
+    - Debugging
+    - Integration Testing
+    - Manual Testing
+
+Best Practices for Version Control in Github:
+    - Use Branches
+    - Use Descriptive commit messages
+    - Use Pull Requests
+    - Use Tags
+    - Avoid Committing Secrets
+
+Third Party Tools:
+    - 
