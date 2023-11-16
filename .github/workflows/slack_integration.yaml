@@ -3,7 +3,7 @@ name: Notify Slack of Build and Deployment Status
 on: 
   push:
     branches:
-      - main
+      - feats
 
 jobs:
   build-and-deploy:
