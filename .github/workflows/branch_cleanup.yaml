@@ -14,6 +14,6 @@ jobs:
     
     # Remove Unused Branches
     - name: Clean up unused Branches
-      run:  /
+      run:  |
         git fetch --prune
         git branch --merged master | grep -v "master" | xargs -n 1 git branch -d

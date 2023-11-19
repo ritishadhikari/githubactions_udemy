@@ -69,5 +69,58 @@ Best Practices for Version Control in Github:
     - Use Tags
     - Avoid Committing Secrets
 
-Third Party Tools:
-    - 
+Filtering Mechanisms:
+    - Branch:
+        - Allows you to specify which branches should trigger the workflow
+        - You can use branch names or regular expressions to match branch names
+    - Path:
+        - Allows you to specify which files or directories should trigger the
+        workflow based on changes to those paths
+        - Use file paths or glob patterns to match files or directories
+    - Event:
+        - Specifies which events should trigger the workflow 
+        - Ex. Trigger the workflow only when a pull request is opened or when a 
+        tag is pushed
+    - Environment:
+        - Allows to specify which environment the workflow should run in
+        - For ex., you can run the workflow only in a specific OS or with a 
+        specific version of python
+    - Timing:
+        - Allows you to specify when the workflow should run
+        - Ex. Trigger the workflow on a schedule or when a cron job is executed
+
+Strategy:
+    - Prioritize Critical Tasks:
+        - Allocate More resources like computing power and time to critical tasks
+    - Parallelizing Jobs:
+        - Configure Workflow to use different databases for development and production
+        environments
+    - Customizing Environment Variables
+    - Using Cache   
+        - Dependencies or Build Aritifacts to avoid rebuilding every time
+        you run the workflow
+
+Parallel Jobs in Strategy:    
+    - Define a Matrix for executing parallel jobs
+    - Setting a max parallel limit for job concurrency
+    - Using fail-fast to terminate jobs when others fail
+
+Reusable Workflows:
+    - It Is used for:
+        - Simplifying Workflow code
+        - Improving Maintainability
+        - Reduce Duplication
+        - Facilitate Collaboration
+        - Save Time and Effort
+    - Defining and Publishing a reusable workflow:
+        - Create a YAML file
+        - Name your workflow
+        - Specify your inputs
+        - Define reusable jobs
+        - Save and Publish
+    - Sharing reusable workflows across teams and organizations:
+        - Use public repositories
+        - Use private repositories
+        - Use Organization-level workflows
+        - Use external workflows
+        - Use workflow template
